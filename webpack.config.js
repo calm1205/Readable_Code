@@ -15,8 +15,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPulgin({
       title: "React Sandbox",
-      favicon: path.resolve(__dirname, "src", "public", "favicon.ico"),
-      template: path.resolve(__dirname, "src", "index.html"),
+      template: path.resolve(__dirname, "src", "public", "index.html"),
     }),
   ],
   output: {
@@ -61,6 +60,12 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js"],
     alias: {
       "~": path.resolve(__dirname, "src"),
+    },
+  },
+  devServer: {
+    historyApiFallback: true, // 開発中のURL変更を反映
+    client: {
+      logging: "error", // ログをerrorしか出さない
     },
   },
 };
