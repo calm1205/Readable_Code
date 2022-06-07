@@ -6,8 +6,8 @@
  *
  */
 {
-  const quantity = 3000;
-  const unitPrice = 5000;
+  const quantity = 3_000;
+  const unitPrice = 5_000;
   const taxRate = 1.1;
 
   const basePrice = quantity * unitPrice;
@@ -20,6 +20,6 @@
 
 /** 送料の算出 */
 function _shippingCost(basePrice: number) {
-  if (basePrice < 3000) return 500;
+  if (basePrice < 3_000) return 500;
   return 0;
 }
