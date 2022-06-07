@@ -7,6 +7,7 @@
 {
   /** コンパイルエラーを回避するためのオブジェクト */
   const customerType = {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     equals: (_: string) => {
       return true;
     },
