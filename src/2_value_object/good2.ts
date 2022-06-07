@@ -1,7 +1,12 @@
 import { GoodPrice } from './good';
 
 /**
+ *
+ * good
+ *
  * 他の場所で活用する時もvalue objectを活用する
+ * const taxRate = (price: number)としない！
+ *
  */
 {
   /** 消費税込みの価格をreturn */
