@@ -22,7 +22,11 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "no-unused-vars": ["error", { "vars": "all", "argsIgnorePattern": "^_" }]
+    "no-unused-vars": ["off"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_" }
+    ]
   },
   "ignorePatterns": ["webpack.config.js"]
 }
